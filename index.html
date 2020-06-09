@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <nav class="nav nav_caps">
-        <label class="nav__hamb" for="hamb">
-            <div class="nav__bar nav__bar_top"></div>
-            <div class="nav__bar nav__bar_bot"></div>
+    <nav class="nav nav_caps nav_bold">
+        <a class="nav__home nav__home_mob nav__home_mob_none" href="#"><img class="nav__logo nav__logo_mob" src="/logos/Axion-logo-1-2.png" alt="text-logo"></a>
+        <label class="nav__hamb nav__hamb_none" for="hamb">
+            <div class="nav__bar"></div>
+            <div class="nav__bar"></div>
         </label>
-        <input class="nav__checkbox" type="checkbox" name="hamb">
-        <a class="nav__home" href="#"><img src="/logos/Axion-logo-1.png" alt="logo"></a>
-        <a class="nav__home_mobile" href="#"><img src="/logos/Axion-logo-1-2.png" alt="text-logo"></a>
-        <div class="nav__links">
-            <a class="nav__link" href="#">Shop</a>
-            <a class="nav__link" href="#">News</a>
-            <a class="nav__link" href="#">Team</a>
-            <a class="nav__link" href="#">Legacy</a>
-            <a class="nav__link" href="#">Help</a>
-        </div>
-        <form class="search">
-            <input class="search__bar" type="search" id="asearch" name="asearch">
-            <input class="search__button" type="image" src="/logos/Vector.png" alt="submit">
-        </form>
-        <button class="nav__signin" type="button">Sign in</button>
-        <button class="nav__cart" type="button">Cart <span>1</span></button>
-        <button class="nav__lang" type="button"><img src="/logos/united-states.png"></button>
+        <input class="nav__checkbox nav__checkbox_none" type="checkbox" id="hamb">
+        <section class="nav__items nav__items_l nav__items_none">
+            <a class="nav__home nav__home_desk" href="#"><img class="nav__logo nav__logo_desk" src="/logos/Axion-logo-1.png" alt="logo"></a>
+            <div class="nav__links">
+                <a class="nav__link nav__link_col" href="#">Shop</a>
+                <a class="nav__link nav__link_col" href="#">News</a>
+                <a class="nav__link nav__link_col" href="#">Team</a>
+                <a class="nav__link nav__link_col" href="#">Legacy</a>
+                <a class="nav__link nav__link_col" href="#">Help</a>
+            </div>
+        </section>
+        <section class="nav__items nav__items_r nav__items_none">
+            <form class="nav__search nav__search_col">
+                <input class="search__bar" type="search" id="asearch" name="asearch">
+                <input class="search__button" type="image" src="/logos/Vector.png" alt="submit">
+            </form>
+            <button class="nav__signin nav__signin_col" type="button">Sign in</button>
+            <button class="nav__cart nav__cart_col" type="button">Cart <span class="nav__amount">1</span></button>
+            <button class="nav__lang nav__lang_col" type="button"><img src="/logos/united-states.png"></button>
+        </section>
     </nav>
     <header class="header header_caps">
         <h1 class="header__title">Legendary footwear reborn.</h1>
