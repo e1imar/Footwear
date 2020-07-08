@@ -5,9 +5,24 @@
 }
 .body > * {padding: 0 calc(50vw - 8.75rem)}
 
+.header__title, .product__header, .product__price, .info__header, .stories__header, .story__header {font-size: 1.666em;}
+.header__title {line-height: .95em;}
+
+.product__name, .story__time, .footer {font-size: 1.25em;}
+
+.info__text, .story__text {font-size: 1.166em}
+
+.photos__header {font-size: 2.08em;}
+
+.footer__text {font-size: 1.08em;}
+
+.header {color: #fff;}
+
+h1, h2, h3, h4 {margin: unset;}
+
 a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 button {
     font: inherit;
@@ -24,7 +39,7 @@ button:hover, a:hover, label:hover {box-shadow: 0 12px 16px -16px rgba(0,0,0,0.2
 textarea:focus, input:focus, button:focus {outline: none;}
 
 .nav_caps, .header_caps, .product__header_caps, .stories__header_caps, .story__link_caps, .photos__header_caps { text-transform: uppercase; }
-.nav_bold {
+.nav_bold, .footer__header {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -72,8 +87,8 @@ textarea:focus, input:focus, button:focus {outline: none;}
     justify-content: center;
     height: 1rem;
     width: 1rem;
-    color: white;
-    background: black;
+    color: #fff;
+    background: #000;
     border-radius: 50%;
 }
 
@@ -84,11 +99,21 @@ textarea:focus, input:focus, button:focus {outline: none;}
 .header {
     height: 11.94rem;
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 5.4em 6.3em;
+    /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -7.5em/cover; */
+    background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(50.18vw - 20.88em)/cover;
 }
 
 .header__title {grid-area: 2;}
-.header__link {grid-area: 3;}
+.header__link {
+    display: flex;
+    grid-area: 3;
+}
+.info__link {display: none;}
+.header__arrow {
+    font-size: 3.3em;
+    line-height: .22em;
+}
 /* .footer {height: 56.125rem;} */
 
 @media only screen and (min-width: 375px) {
@@ -100,11 +125,36 @@ textarea:focus, input:focus, button:focus {outline: none;}
         width: calc(1.37rem + 5vw);
         height: calc(.14rem + .8vw);
     }
+
+    .header {
+        height: calc(57.06vw - 1.43rem);
+        /* grid-template-rows: 10em 16em; */
+        grid-template-rows: calc(1em + 14vw) calc(29.61vw - 2.96em);
+        /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -5.2em/cover; */
+        background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(-.14em - 16.18vw)/cover;
+    }
+
+    .header__title {font-size: calc(7.63vw - .719em);}
+    .header__link, .story__link {font-size: calc(.364em + 2.035vw);}
+
+    
 }
 
 @media only screen and (min-width: 768px) {
     .body > * {padding: 0 calc(11rem - 17.1875vw)}
     .body > :not(.footer) {margin: 0 calc(18.36vw - 8.8125rem);}
+
+    .header {
+        /* padding: 0 4.5em; */
+        padding: 0 calc(1.16em + 3.9vw);
+        height: calc(56.41rem - 63.46vw);
+        /* grid-template-rows: 6.3em 8em; */
+        grid-template-rows: calc(21.1em - 17.34vw) calc(40em - 37.5vw);
+        /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -10.5em/cover; */
+        background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(49.23vw - 42em)/cover;
+    }
+    .header__title {font-size: calc(9.16em - 7.81vw);}
+    .header__link, .story__link {font-size: calc(3.666em - 3.125vw);}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -140,7 +190,7 @@ textarea:focus, input:focus, button:focus {outline: none;}
     
     .nav__items_r {flex-basis: calc(11.48rem + 17.53vw);}
     .nav__search {
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid #000;
         align-self: center;
     }
     .search__bar {border: none;}
@@ -151,4 +201,13 @@ textarea:focus, input:focus, button:focus {outline: none;}
     }
 
     .nav__flag {width: calc(.278rem + 1.328vw);}
+
+    .header {
+        height: calc(3.887rem + 18.616vw);
+        /* grid-template-rows: 7.3em 8.6em; */
+        grid-template-rows: calc(8.22vw - .71em) calc(3.8em + 4.93vw);
+        background: url(../logos/rob-potter-422534-unsplash.png) no-repeat 0/cover;
+    }
+    .header__title {font-size: 2.5em;}
+    .header__link, .story__link {font-size: 1em;}
 }
