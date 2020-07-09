@@ -8,6 +8,11 @@
 .header__title, .product__header, .product__price, .info__header, .stories__header, .story__header {font-size: 1.666em;}
 .header__title {line-height: .95em;}
 
+.header__arrow {
+    font-size: 3.3em;
+    line-height: .22em;
+}
+
 .product__name, .story__time, .footer {font-size: 1.25em;}
 
 .info__text, .story__text {font-size: 1.166em}
@@ -38,8 +43,10 @@ button:hover, a:hover, label:hover {box-shadow: 0 12px 16px -16px rgba(0,0,0,0.2
 .search__bar {-webkit-appearance: none;}
 textarea:focus, input:focus, button:focus {outline: none;}
 
+figure {margin: unset;}
+
 .nav_caps, .header_caps, .product__header_caps, .stories__header_caps, .story__link_caps, .photos__header_caps { text-transform: uppercase; }
-.nav_bold, .footer__header {
+.nav_bold, .footer__header, .product__price {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -110,13 +117,33 @@ textarea:focus, input:focus, button:focus {outline: none;}
     grid-area: 3;
 }
 .info__link {display: none;}
-.header__arrow {
-    font-size: 3.3em;
-    line-height: .22em;
+
+.product {height: 29.9em;}
+.product {
+    display: grid;
+    height: 29.9em;
+    grid-template-rows: 2.8em min-content auto;
+    /* grid: 2.8em min-content auto/auto; */
 }
+.product__header {
+    grid-area: 2;
+    text-align: center;
+    padding-right: .5em;
+}
+.product__item {grid-area: 3;}
+
+.product__item:nth-child(3), .product__item:nth-child(4), .product__item:nth-child(5) {display: none;}
+
 /* .footer {height: 56.125rem;} */
 
 @media only screen and (min-width: 375px) {
+    .header__title {font-size: calc(7.63vw - .719em);}
+    .header__link, .story__link {font-size: calc(.364em + 2.035vw);}
+
+    .product__header, .info__header, .stories__header {font-size: calc(.87em + 2.54vw);}
+    .product__name {font-size: calc(.85em + 1.27vw);}
+    .product__price, .story__header {font-size: calc(1.27em + 1.27vw);}
+    
     .body > * {padding: 0 calc(3.23rem - 1vw)}
 
     .nav {grid: calc(2.02rem + 10.57vw) / auto auto;}
@@ -134,13 +161,21 @@ textarea:focus, input:focus, button:focus {outline: none;}
         background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(-.14em - 16.18vw)/cover;
     }
 
-    .header__title {font-size: calc(7.63vw - .719em);}
-    .header__link, .story__link {font-size: calc(.364em + 2.035vw);}
-
-    
+    /* .product {height: 41.6em;} */
+    .product {
+        height: calc(18.74em + 35.73vw);
+        /* grid-template-rows: 2.8em min-content auto; */
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    .header__title {font-size: calc(9.16em - 7.81vw);}
+    .header__link, .story__link {font-size: calc(3.666em - 3.125vw);}
+
+    .product__header, .info__header, .stories__header {font-size: calc(4.5em - 3.125vw);}
+    .product__name {font-size: calc(3.66em - 3.12vw);}
+    .product__price {font-size: 4.83em - 4.3vw;}
+
     .body > * {padding: 0 calc(11rem - 17.1875vw)}
     .body > :not(.footer) {margin: 0 calc(18.36vw - 8.8125rem);}
 
@@ -153,11 +188,18 @@ textarea:focus, input:focus, button:focus {outline: none;}
         /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -10.5em/cover; */
         background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(49.23vw - 42em)/cover;
     }
-    .header__title {font-size: calc(9.16em - 7.81vw);}
-    .header__link, .story__link {font-size: calc(3.666em - 3.125vw);}
+
+    .product {height: calc(62em - 31.85vw);}
 }
 
 @media only screen and (min-width: 1024px) {
+    .header__title {font-size: 2.5em;}
+    .header__link, .story__link {font-size: 1em;}
+
+    .product__header, .info__header, .stories__header {font-size: 1.83em;}
+    .product__name {font-size: 1em;}
+    .product__price {font-size: 1.16em;}
+
     .body > :not(.footer) {margin: 0 calc(15.753vw - 7.144rem);}
 
     .nav__hamb_none, .nav__home_mob_none {display: none;}
@@ -208,6 +250,6 @@ textarea:focus, input:focus, button:focus {outline: none;}
         grid-template-rows: calc(8.22vw - .71em) calc(3.8em + 4.93vw);
         background: url(../logos/rob-potter-422534-unsplash.png) no-repeat 0/cover;
     }
-    .header__title {font-size: 2.5em;}
-    .header__link, .story__link {font-size: 1em;}
+
+    .product {height: calc(57.95em - 27.12vw);}
 }
