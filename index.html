@@ -43,58 +43,76 @@
     </header>
     <section class="product">
         <h2 class="product__header product__header_caps">Featured product</h2>
-        <figure class="product__item">
-            <a class="product__link" href="#">
-                <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571.png" alt="shoes">
-                <figcaption class="product__name">Atlas Black/Rasta Axion</figcaption>
-                <figcaption class="product__price">$89.00</figcaption>
-            </a>
-            <figcaption class="product__clrs">
-                <button class="product__clr product__clr_1" type="button"></button>
-                <button class="product__clr product__clr_2" type="button"></button>
-                <button class="product__clr product__clr_3" type="button"></button>
-                <button class="product__clr product__clr_4" type="button"></button>
-            </figcaption>
-        </figure>
-        <figure class="product__item">
-            <a class="product__link" href="#">
-                <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-2.png" alt="shoes">
-                <figcaption class="product__name">Camel/Chili Pepper Axion</figcaption>
-                <figcaption class="product__price">$74.00</figcaption>
-            </a>
-            <figcaption class="product__clrs">
-                <button class="product__clr product__clr_1" type="button"></button>
-                <button class="product__clr product__clr_2" type="button"></button>
-                <button class="product__clr product__clr_3" type="button"></button>
-                <button class="product__clr product__clr_4" type="button"></button>
-            </figcaption>
-        </figure>
-        <figure class="product__item">
-            <a class="product__link" href="#">
-                <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-3.png" alt="shoes">
-                <figcaption class="product__name">Mandel Smoke/Rust Axion</figcaption>
-                <figcaption class="product__price">$69.00</figcaption>
-            </a>
-            <figcaption class="product__clrs">
-                <button class="product__clr product__clr_1" type="button"></button>
-                <button class="product__clr product__clr_2" type="button"></button>
-                <button class="product__clr product__clr_3" type="button"></button>
-                <button class="product__clr product__clr_4" type="button"></button>
-            </figcaption>
-        </figure>
-        <figure class="product__item">
-            <a class="product__link" href="#">
-                <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-4.png" alt="shoes">
-                <figcaption class="product__name">Cloud/Electric Blue Axion</figcaption>
-                <figcaption class="product__price">$69.00</figcaption>
-            </a>
-            <figcaption class="product__clrs">
-                <button class="product__clr product__clr_1" type="button"></button>
-                <button class="product__clr product__clr_2" type="button"></button>
-                <button class="product__clr product__clr_3" type="button"></button>
-                <button class="product__clr product__clr_4" type="button"></button>
-            </figcaption>
-        </figure>
+        <section class="product__items">
+            <figure class="product__item product__item_1">
+                <a class="product__link" href="#">
+                    <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571.png" alt="shoes">
+                    <figcaption class="product__name">Atlas Black/Rasta Axion</figcaption>
+                    <figcaption class="product__price">$89.00</figcaption>
+                </a>
+                <figcaption class="product__clrs">
+                    <input class="product__radio" type="radio" name="color" id="clr1">
+                    <label class="product__clr product__clr_red" for="clr1"></label>
+                    <input class="product__radio" type="radio" checked="checked" name="color" id="clr2">
+                    <label class="product__clr product__clr_bl" for="clr2"></label>
+                    <input class="product__radio" type="radio" name="color" id="clr3">
+                    <label class="product__clr product__clr_gr" for="clr3"></label>
+                    <input class="product__radio" type="radio" name="color" id="clr4">
+                    <label class="product__clr product__clr_yl" for="clr4"></label>
+                </figcaption>
+            </figure>
+            <figure class="product__item product__item_2">
+                <a class="product__link" href="#">
+                    <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-2.png" alt="shoes">
+                    <figcaption class="product__name">Camel/Chili Pepper Axion</figcaption>
+                    <figcaption class="product__price">$74.00</figcaption>
+                </a>
+                <figcaption class="product__clrs">
+                    <input class="product__radio" type="radio" name="color2" id="clr5">
+                    <label class="product__clr product__clr_gr" for="clr5"></label></label>
+                    <input class="product__radio" type="radio" checked="checked" name="color2" id="clr6">
+                    <label class="product__clr product__clr_cm" for="clr6"></label></label>
+                    <input class="product__radio" type="radio" name="color2" id="clr7">
+                    <label class="product__clr product__clr_red" for="clr7"></label></label>
+                    <input class="product__radio" type="radio" name="color2" id="clr8">
+                    <label class="product__clr product__clr_yl" for="clr8"></label></label>
+                </figcaption>
+            </figure>
+            <figure class="product__item product__item_3">
+                <a class="product__link" href="#">
+                    <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-3.png" alt="shoes">
+                    <figcaption class="product__name">Mandel Smoke/Rust Axion</figcaption>
+                    <figcaption class="product__price">$69.00</figcaption>
+                </a>
+                <figcaption class="product__clrs">
+                    <input class="product__radio" type="radio" name="color3" id="clr9">
+                    <label class="product__clr product__clr_gr" for="clr9"></label>
+                    <input class="product__radio" type="radio" checked="checked" name="color3" id="clr10">
+                    <label class="product__clr product__clr_br" for="clr10"></label>
+                    <input class="product__radio" type="radio" name="color3" id="clr11">
+                    <label class="product__clr product__clr_blu" for="clr11"></label>
+                    <input class="product__radio" type="radio" name="color3" id="clr12">
+                    <label class="product__clr product__clr_yl" for="clr12"></label>
+                </figcaption>
+            </figure>
+            <figure class="product__item product__item_4">
+                <a class="product__link" href="#">
+                    <img class="product__img" src="/logos/83d143ed9791a3b813121de5958d3571-4.png" alt="shoes">
+                    <figcaption class="product__name">Cloud/Electric Blue Axion</figcaption>
+                    <figcaption class="product__price">$69.00</figcaption>
+                </a>
+                <figcaption class="product__clrs">
+                    <input class="product__radio" type="radio" name="color4" id="clr13">
+                    <label class="product__clr product__clr_gr" for="clr13"></label>
+                    <input class="product__radio" type="radio" checked="checked" name="color4" id="clr14">
+                    <label class="product__clr product__clr_lb" for="clr14"></label>
+                    <input class="product__radio" type="radio" name="color4" id="clr15">
+                    <label class="product__clr product__clr_red" for="clr15"></label>
+                    <input class="product__radio" type="radio" name="color4" id="clr16">
+                    <label class="product__clr product__clr_yl" for="clr16"></label>
+                </figcaption>
+            </figure>
+        </section>
     </section>
     <article class="about">
         <section class="info">
