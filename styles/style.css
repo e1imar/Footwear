@@ -12,7 +12,11 @@
 .stories__header,
 .story__header { font-size: 1.666em; }
 
-.header__title { line-height: .95em; }
+.header__title {
+  line-height: .95em;
+  grid-area: 2;
+  font-size: 1.666em;
+}
 
 .header__arrow {
   font-size: 3.3em;
@@ -159,11 +163,6 @@ figure { margin: unset; }
   /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -7.5em/cover; */
   background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(50.18vw - 20.88em)/cover;
   color: #fff;
-}
-
-.header__title {
-  grid-area: 2;
-  font-size: 1.666em;
 }
 
 .header__link {
