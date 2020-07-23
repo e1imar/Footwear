@@ -310,7 +310,7 @@ figure { margin: unset; }
     /* grid-template-rows: 20.4em 3em; */
     grid-template-rows: calc(9.65em + 16.79vw) calc(.26em + 4.27vw);
   }
-  
+
   .product__img {
     /* width: 19.5em;
     height: 18em; */
