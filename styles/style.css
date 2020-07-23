@@ -31,9 +31,10 @@
 
 .footer__text { font-size: 1.08em; }
 
-.header { color: #fff; }
-
-h1, h2, h3, h4 { margin: unset; }
+h1,
+h2,
+h3,
+h4 { margin: unset; }
 
 a {
   text-decoration: none;
@@ -54,13 +55,13 @@ label { cursor: pointer; }
 button:hover,
 a:hover,
 label:hover {
-  box-shadow: 0 12px 16px -16px red,0 17px 50px -50px red;
+  box-shadow: 0 12px 16px -16px red, 0 17px 50px -50px red;
   color: red;
   cursor: pointer;
   transition: all 1s;
 }
 
-.search__bar { -webkit-appearance: none;}
+.search__bar { -webkit-appearance: none; }
 
 textarea:focus,
 input:focus,
@@ -155,8 +156,10 @@ figure { margin: unset; }
   height: 11.94rem;
   display: grid;
   grid-template-rows: 5.4em 6.3em;
+
   /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -7.5em/cover; */
   background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(50.18vw - 20.88em)/cover;
+  color: #fff;
 }
 
 .header__title { grid-area: 2; }
@@ -227,21 +230,21 @@ figure { margin: unset; }
   border-radius: 50%;
 }
 
-.product__clr_red {background: #B62E3C;}
+.product__clr_red { background: #b62e3c; }
 
-.product__clr_bl {background: #0E1211;}
+.product__clr_bl { background: #0e1211; }
 
-.product__clr_gr {background: #C4C4C4;}
+.product__clr_gr { background: #c4c4c4; }
 
-.product__clr_yl {background: #FDB431;}
+.product__clr_yl { background: #fdb431; }
 
-.product__clr_cm {background: #E29D69;}
+.product__clr_cm { background: #e29d69; }
 
-.product__clr_br {background: #762E31;}
+.product__clr_br { background: #762e31; }
 
-.product__clr_blu {background: #41479B;}
+.product__clr_blu { background: #41479b; }
 
-.product__clr_lb {background: #257DA9;}
+.product__clr_lb { background: #257da9; }
 
 /* .footer {height: 56.125rem;} */
 
@@ -273,8 +276,10 @@ figure { margin: unset; }
 
   .header {
     height: calc(57.06vw - 1.43rem);
+
     /* grid-template-rows: 10em 16em; */
     grid-template-rows: calc(1em + 14vw) calc(29.61vw - 2.96em);
+
     /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -5.2em/cover; */
     background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(-.14em - 16.18vw)/cover;
   }
@@ -282,22 +287,29 @@ figure { margin: unset; }
   /* .product {height: 41.6em;} */
   .product {
     height: calc(18.74em + 35.73vw);
-    /* grid-template-rows: 5.1em min-content; */
-    /* grid-template-rows: calc(.6em + 7.02vw) 5.5em; */
+
+    /* grid-template-rows: 5.1em min-content;
+    grid-template-rows: calc(.6em + 7.02vw) 5.5em; */
     grid-template-rows: calc(.6em + 7.02vw) calc(10.94vw - 1.5em);
   }
 
-  .product__items { padding: 0 3.2em; padding: 0 calc(9.77vw - 3.05em); }
+  .product__items {
+    /* padding: 0 3.2em; */
+    padding: 0 calc(9.77vw - 3.05em);
+  }
 
   .product__item {
-    /* height: 25.33em; */
-    /* width: 21.31em; */
+    /* height: 25.33em;
+    width: 21.31em; */
     height: calc(11.6em + 21.46vw);
     width: calc(23.13em - 2.84vw);
     margin-left: calc(2.34em - 3.66vw);
   }
 
-  .product__link { grid-template-rows: 20.4em 3em; grid-template-rows: calc(9.65em + 16.79vw) calc(.26em + 4.27vw); }
+  .product__link {
+    /* grid-template-rows: 20.4em 3em; */
+    grid-template-rows: calc(9.65em + 16.79vw) calc(.26em + 4.27vw);
+  }
   
   .product__img {
     /* width: 19.5em;
@@ -306,7 +318,10 @@ figure { margin: unset; }
     height: calc(7.84em + 15.88vw);
   }
 
-  .product__clrs  {width: 7.9em; width: calc(4.58em + 5.19vw); }
+  .product__clrs  {
+    /* width: 7.9em; */
+    width: calc(4.58em + 5.19vw);
+  }
 
   .product__clr {
     width: calc(.85em + 1.27vw);
@@ -344,8 +359,10 @@ figure { margin: unset; }
     /* padding: 0 4.5em; */
     padding: 0 calc(1.16em + 3.9vw);
     height: calc(56.41rem - 63.46vw);
+
     /* grid-template-rows: 6.3em 8em; */
     grid-template-rows: calc(21.1em - 17.34vw) calc(40em - 37.5vw);
+
     /* background: url(../logos/rob-potter-422534-unsplash.png) no-repeat -10.5em/cover; */
     background: url(../logos/rob-potter-422534-unsplash.png) no-repeat calc(49.23vw - 42em)/cover;
   }
@@ -353,20 +370,25 @@ figure { margin: unset; }
   .product {
     /* height: 34.8em; */
     height: calc(62em - 31.87vw);
-    /* grid-template-rows: 5.26em min-content auto; */
-    grid-template-rows: calc(4.62em + .75vw) 4em;
+
+    /* grid-template-rows: 5.26em min-content auto;
+    grid-template-rows: calc(4.62em + .75vw) 4em; */
     grid-template-rows: calc(4.62em + .75vw) calc(10em - 7.03vw);
   }
 
   .product__item {
     margin-left: 0;
-    height: 18.8em;
-    width: 15.5em;
+
+    /* height: 18.8em;
+    width: 15.5em; */
     height: calc(44.92em - 30.61vw);
     width: calc(38.74em - 27.23vw);
   }
 
-  .product__link { grid-template-rows: 16.2em 1.5em; grid-template-rows: calc(33em - 19.69vw) calc(7.5em - 7.03vw); }
+  .product__link {
+    /* grid-template-rows: 16.2em 1.5em; */
+    grid-template-rows: calc(33em - 19.69vw) calc(7.5em - 7.03vw);
+  }
 
   .product__header {
     padding-right: calc(2em - 5.86vw);
@@ -380,7 +402,7 @@ figure { margin: unset; }
   }
 
   .product__clrs {
-    width: 4.1em;
+    /* width: 4.1em; */
     width: calc(19.3em - 17.81vw);
   }
 
@@ -518,7 +540,7 @@ figure { margin: unset; }
   }
 
   .product__clrs {
-    width: 4.5em;
+    /* width: 4.5em; */
     width: calc(1.29em + 3.29vw);
   }
 
