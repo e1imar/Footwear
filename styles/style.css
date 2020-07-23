@@ -262,7 +262,7 @@ figure { margin: unset; }
 
   .product__price,
   .story__header { font-size: calc(1.27em + 1.27vw); }
-  
+
   .body > * { padding: 0 calc(3.23rem - 1vw); }
 
   .nav { grid: calc(2.02rem + 10.57vw) / auto auto; }
@@ -318,7 +318,7 @@ figure { margin: unset; }
     height: calc(7.84em + 15.88vw);
   }
 
-  .product__clrs  {
+  .product__clrs {
     /* width: 7.9em; */
     width: calc(4.58em + 5.19vw);
   }
@@ -332,9 +332,10 @@ figure { margin: unset; }
 @media only screen and (min-width: 684px) {
   .product__item:nth-child(2) { display: grid; }
 
-  .product__items { justify-content: space-around; }
-  
-  .product__items { padding: 0 calc(6.25em - 9.77vw); }
+  .product__items {
+    justify-content: space-around;
+    padding: 0 calc(6.25em - 9.77vw);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -422,7 +423,6 @@ figure { margin: unset; }
   .header__link,
   .story__link { font-size: 1em; }
 
-
   .product__header,
   .info__header,
   .stories__header { font-size: 1.83em; }
@@ -436,14 +436,10 @@ figure { margin: unset; }
   .nav__hamb_none,
   .nav__home_mob_none { display: none; }
 
-  .nav__home_desk { display: initial; }
-
   .nav__link_col,
   .nav__signin_col,
   .nav__cart_col,
   .nav__lang_col { height: unset; }
-
-  .nav__checkbox:checked ~ .nav__items { display: flex; }
 
   .nav {
     display: flex;
@@ -456,6 +452,8 @@ figure { margin: unset; }
     display: flex;
     justify-content: inherit;
   }
+
+  .nav__checkbox:checked ~ .nav__items { display: flex; }
 
   .nav__home_desk {
     display: flex;
@@ -494,6 +492,7 @@ figure { margin: unset; }
 
   .header {
     height: calc(3.887rem + 18.616vw);
+
     /* grid-template-rows: 7.3em 8.6em; */
     grid-template-rows: calc(8.22vw - .71em) calc(3.8em + 4.93vw);
     background: url(../logos/rob-potter-422534-unsplash.png) no-repeat 0/cover;
@@ -514,6 +513,7 @@ figure { margin: unset; }
     height: calc(14.59em + 4.93vw);
     width: calc(3.58em + 13.97vw);
     max-height: 19.4em;
+
     /* max-width: 17.2em; */
   }
 
@@ -554,6 +554,7 @@ figure { margin: unset; }
     width: .1em;
     height: 8.4em;
     position: absolute;
+
     /* margin: 2.8em 17.7em;
     margin: 3.5em 19.7em; */
     margin: calc(5.75vw - 2.11em) calc(3.76em + 16.44vw);
