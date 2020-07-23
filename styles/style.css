@@ -6,7 +6,6 @@
 
 .body > * { padding: 0 calc(50vw - 8.75rem); }
 
-.header__title,
 .product__header,
 .product__price,
 .info__header,
@@ -162,7 +161,10 @@ figure { margin: unset; }
   color: #fff;
 }
 
-.header__title { grid-area: 2; }
+.header__title {
+  grid-area: 2;
+  font-size: 1.666em;
+}
 
 .header__link {
   display: flex;
