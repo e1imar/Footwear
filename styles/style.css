@@ -314,6 +314,7 @@ figure { margin: unset; }
 .story {
   display: grid;
   grid-template-rows: 176px 31px 146px;
+  position: relative;
 }
 
 .story__time {
@@ -578,7 +579,10 @@ figure { margin: unset; }
     grid-template-rows: minmax(min-content, calc(1546px - 107.81vw)) minmax(min-content, calc(1000px - 41vw)) minmax(min-content, calc(1262px - 98.05vw));
   }
 
-  .info { padding: calc(276px - 26.95vw) 0; }
+  .info {
+    padding: calc(276px - 26.95vw) 0;
+    padding: 69px 0;
+  }
 
   .stories { padding: calc(35.55vw - 273px) 0 0; }
   
